@@ -1,0 +1,25 @@
+{
+    "name": "@types/parents",
+    "version": "1.0.1",
+    "description": "TypeScript definitions for parents",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/parents",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "TeamworkGuy2",
+            "url": "https://github.com/TeamworkGuy2",
+            "githubUsername": "TeamworkGuy2"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/parents"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "c57502a904370ab18188fcb2ccdf91ad5e295aa3274d445651e2cdf5f3a2c94b",
+    "typeScriptVersion": "3.6"
+}

@@ -1,0 +1,35 @@
+From 5ed7faaa1992a4787b9c477c5dbff79867582808 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Fri, 18 Aug 2017 00:25:35 +0200
+Subject: Do not depend on path-plateform
+
+Use an hard depend on nodejs > 4 and depends on path
+
+Forwarded: no
+---
+ index.js     | 2 +-
+ package.json | 1 -
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/index.js b/index.js
+index 84a9639..ba25a49 100644
+--- a/index.js
++++ b/index.js
+@@ -1,4 +1,4 @@
+-var pathPlatform = require('path-platform');
++var pathPlatform = require('path');
+ 
+ module.exports = function (cwd, opts) {
+     if (cwd === undefined) cwd = process.cwd();
+diff --git a/package.json b/package.json
+index 5f6814c..47e7bb5 100644
+--- a/package.json
++++ b/package.json
+@@ -9,7 +9,6 @@
+         "test" : "test"
+     },
+     "dependencies" : {
+-        "path-platform": "~0.11.15"
+     },
+     "devDependencies" : {
+         "tap" : "~0.2.5"
